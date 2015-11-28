@@ -13,7 +13,8 @@ _.forEach(grouped, function(value, article) {
   });
 });
 
-  return _.sortBy(result, 'total_orders').reverse();
+return _.sortBy(result, 'total_orders').reverse();
+
 }
 
 module.exports = ordered;
