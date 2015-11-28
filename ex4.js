@@ -4,7 +4,7 @@ var temped = cities => {
 	            warm: []
 	           };
 
-  function greatest(temp) {
+  let greatest = (temp) => {
 	  return temp > 19;
 	};
 
