@@ -1,6 +1,6 @@
 var _ = require('lodash');
 var temped = cities => {
-  var final = { hot: [],
+  let final = { hot: [],
 	            warm: []
 	           };
 

@@ -1,8 +1,8 @@
 var _ = require('lodash');
 
 var ordered = orders => {
-  var result = [];
-  var grouped = _.groupBy(orders, 'article');
+  let result = [];
+  let grouped = _.groupBy(orders, 'article');
 
   _.forEach(grouped, (value, article) => {
     result.push({

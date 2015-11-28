@@ -1,8 +1,8 @@
 var _ = require('lodash');
 
 var comment_count = comments => {
-  var result = [];
-  var grouped = _.groupBy(comments, 'username');
+  let result = [];
+  let grouped = _.groupBy(comments, 'username');
   
   _.forEach(grouped, (value, username) => {
       result.push({
