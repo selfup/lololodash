@@ -1,15 +1,15 @@
 var _ = require('lodash');
 
 var ordered = orders => {
-var result = [];
-var grouped = _.groupBy(orders, 'article');
+  var result = [];
+  var grouped = _.groupBy(orders, 'article');
 
-_.forEach(grouped, (value, article) => {
+  _.forEach(grouped, (value, article) => {
     result.push({
       article: parseInt(article),
-      total_orders: _.reduce(value, function(sum, value) {
+      total_orders: _.reduce(value, (sum, value) => {
         return sum + value.quantity;
-      }, 0)
+    }, 0)
   });
 });
 
