@@ -1,7 +1,7 @@
 var _ = require('lodash');
 
-var sized = function(cities) {
-  return _.forEach(cities, function(city) {
+var sized = cities => {
+  return _.forEach(cities, city => {
     if (city.population > 1) {
       city.size = 'big';
     } else if (city.population > .5) {

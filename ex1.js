@@ -1,6 +1,6 @@
 var _ = require('lodash');
 
-var worker = function(users) {
+var worker = users => {
   return _.where(users, { active: true});
 };
 

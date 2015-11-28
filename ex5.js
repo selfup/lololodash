@@ -1,8 +1,8 @@
 var _ = require('lodash');
 
-var chained = function(words) {
+var chained = words => {
   return _.chain(words)
-    .map(function(word) {
+    .map( word => {
 	  return (word + 'Chained').toUpperCase();
   })
   .sort();

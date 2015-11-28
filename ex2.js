@@ -1,6 +1,6 @@
 var _ = require('lodash');
 
-var sorted = function(items) {
+var sorted = items => {
   return _.sortBy(items, 'quantity').reverse();
 };
 
