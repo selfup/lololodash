@@ -14,9 +14,9 @@ var analyze = eplyIncs => {
   })
 
   return {
-    average: average,
-    underperform: _.sortBy(underperform, 'income'),
-    overperform: _.sortBy(overperform, 'income')
+    average: average
+    , underperform: _.sortBy(underperform, 'income')
+    , overperform: _.sortBy(overperform, 'income')
   }
 
 }
