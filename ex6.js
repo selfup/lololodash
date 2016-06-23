@@ -16,5 +16,3 @@ return _.sortBy(result, 'comment_count').reverse()
 }
 
 module.exports = comment_count
-
-
